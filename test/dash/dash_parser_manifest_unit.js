@@ -45,7 +45,7 @@ describe('DashParser Manifest', () => {
    * @param {string} parameter
    * @return {string}
    */
-   const cicpScheme = parameter => `urn:mpeg:mpegB:cicp:${parameter}`;
+  const cicpScheme = (parameter) => `urn:mpeg:mpegB:cicp:${parameter}`;
 
   beforeAll(async () => {
     mp4Index = await shaka.test.Util.fetch(mp4IndexSegmentUri);
